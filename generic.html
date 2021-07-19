@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Generic Title</title>
+    <link rel="stylesheet" href="genericLocalReference.css">
+
+    <!-- A generic comment above some generic embedded CSS -->
+    <style>
+        body {
+            min-height: 150vh; /* A CSS comment - vh means viewport height as a percentage, so the body will always take up at least 150% of the viewport */
+        }
+
+        .genericClass {
+            color: rgb(200, 130, 0);
+            background-color: rgb(32, 32, 32);
+        }
+
+        #genericID {
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Generic Header - Typically, only one of these &lt;h1&gt; tags per page is good practice! <a href="index.html">Click here to return to the index page</a></h1>
+        <h2>Generic Header</h2>
+        <h3>Generic Header</h3>
+        <h4>Generic Header</h4>
+        <h5>Generic Header</h5>
+        <h6>Generic Header</h6>
+    </header>
+
+    <nav>
+        <h2 style="text-decoration: underline;">Navbar Header</h2> <!-- Note the inline styling, ew. PLZ use classes for any styles that you think may be used more than once anywhere (and sometimes even when you don't, because it makes it so much easier to edit the look of a website from a single document consistantly) -->
+        <ul>
+            <li>Generic List Item 1</li>
+            <li>Generic List Item 2</li>
+            <li>Generic List Item 3</li>
+            <li><a href="#todo">Sends your browser down to the first todo ID (in good practice, only one of these exists per page)</a></li>
+        </ul>
+        
+        <ol>
+            <li>Generic List Item 1</li>
+            <li>Generic List Item 2</li>
+            <li>Generic List Item 3</li>
+        </ol>
+
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>A generic section</h2>
+            <hr/>
+            <p>Generic Lorem Text: Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure praesentium odit harum, quas consequuntur molestias voluptates, porro eveniet corporis repudiandae rem illum nesciunt repellat minus veniam corrupti iste, sapiente distinctio.</p>
+            <br/>
+            <div class="genericClass">
+                <p>Here is some text in a div named generic class</p>
+                <p id="genericID">And some more text in that div which has the id genericID. Which being more specific than classes, overwrites the text color</p>
+            </div>
+            <p>On most browsers, press F12 to access the inspector and check out the semantic element tags i.e. header, nav, main, section, article, etc. <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Here's the article from W3Schools on this...</a></p>
+            <p><a href="https://validator.w3.org/nu/#textarea" target="_blank">A link to a HTML validator. ALWAYS CHECK YOUR WORK HERE!</a></p>
+            <p>Btw if using VS Code, there's an extension with ID celianriboulet.webvalidator which adds this button for quick validation in your IDE:</p>
+            <img src="W3-Validator-Plugin.png" alt="The W3 Schools Validator VS Code Plugin Button">
+            <p><em>Remember to always use <strong>file-upload</strong> for assignments and assessable work rather than this plugin or direct input, as that is likely what will be used for marking!</em></p>
+        </section>
+
+        <section>
+            <h2 id="todo">Todo</h2>
+            <p>We'll add onto this generic page as we go throughout the sem, <a href="https://github.com/BryceTuppurainen/SENG1050-PASS-DOCS">here's a link to the repo!</a> Set up a new brach using your last name, followed by a / and then the title of the branch all-in-kebab-case (all lower case, use - in place of spaces). Then create a pull request onto main so I can get it up on this site. For example, tuppurainen/adding-generic-page</p>
+        </section>
+
+        <aside>
+            <p>Recommendations for IDE, Browser, and other resources (be sure to ask your lecturer/lab-demo if unsure and let me know if you have any suggestions for the list)</p>
+            <ul>
+                <li><a href="https://www.google.com.au/chrome/">Google Chrome (Cross-platform and common LTS Browser)</a></li>
+                <li><a href="https://code.visualstudio.com/">VS Code (Relatively lightweight IDE)</a></li>
+                <li><a href="https://github.com/login">GitHub</a> and a <a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">tute (the other crash-courses by Traversy Media mesh well with this course btw)</a></li>
+                <li><a href="https://www.w3schools.com/html/">W3 Schools Tutes (A saving grace)</a>, be sure to check out the reference tables for tags/attributes/etc they have too</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Page Created by Bryce Tuppurainen and SENG1050 PASS team, publically available under the MIT LICENSE</p>
+    </footer>
+
+</body>
+</html>
