@@ -1,51 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head include="../assets/content/head.html">
-	<title>PASS SENG1050 - tuppurainen.com.au</title>
-    <link rel="stylesheet" href="../assets/style.css">
+  <head include="../assets/content/head.html">
+    <title>PASS SENG1050 - tuppurainen.com.au</title>
+    <link rel="stylesheet" href="../assets/style.css" />
     <script src="../assets/functions.js"></script>
-</head>
+  </head>
 
+  <body>
+    <div class="major-div">
+      <nav>
+        <h1><a href="../home.html">tuppurainen.com.au</a></h1>
+        <h5 id="author">A site by Bryce Tuppurainen</h5>
+        <ul>
+          <li><a href="../home.html">Home</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li>
+            <a
+              href="https://github.com/BryceTuppurainen/tuppurainen.com.au"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li><a href="index.html" target="_blank">PASS</a></li>
+        </ul>
+      </nav>
 
-<body>
-
-	<div class="major-div">
-
-        <nav>
-            <h1><a href="../home.html">tuppurainen.com.au</a></h1>
-            <h5 id="author">A site by Bryce Tuppurainen</h5>
+      <main>
+        <article>
+          <div class="article-div">
+            <h3>Welcome to the SENG1050 PASS page</h3>
+            <p>
+              I'll be uploading any of the content which is able to be presented
+              publically here, below is a series of links to each page that
+              we've been working on. See getting-started if you're new to catch
+              up and create some branches! (That's right, you'll learn
+              real-world skills used by real companies!)
+            </p>
+            <p>
+              Please note, due to relatively new security measures in modern
+              browsers relating to JS accessing information stored in other
+              local files (it opens a potential exploit to send malicious html
+              documents). The JavaScript on this page likely won't run unless
+              hosted by a server. You could run apache to get around this and
+              host your own site locally, but it's likely not worth the effort
+              and is out of scope.
+            </p>
             <ul>
-                <li><a href="../home.html">Home</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="https://github.com/BryceTuppurainen/tuppurainen.com.au" target="_blank">GitHub</a></li>
-                <li><a href="index.html" target="_blank">PASS</a></li>
+              <li>
+                <a href="https://github.com/BryceTuppurainen/SENG1050-PASS-DOCS"
+                  >GitHub Repo</a
+                >
+              </li>
+              <li><a href="generic.html">A Generic Page</a></li>
             </ul>
-        </nav>
+          </div>
+        </article>
+      </main>
 
-			<main>
-
-				<article>
-					<div class="article-div">
-						<h3>Welcome to the SENG1050 PASS page</h3>
-                        <p>I'll be uploading any of the content which is able to be presented publically here, below is a series of links to each page that we've been working on. See getting-started if you're new to catch up and create some branches! (That's right, you'll learn real-world skills used by real companies!)</p>
-                        <p>Please note, due to relatively new security measures in modern browsers relating to JS accessing information stored in other local files (it opens a potential exploit to send malicious html documents). The JavaScript on this page likely won't run unless hosted by a server. You could run apache to get around this and host your own site locally, but it's likely not worth the effort and is out of scope.</p>
-                        <ul>
-                            <li><a href="https://github.com/BryceTuppurainen/SENG1050-PASS-DOCS">GitHub Repo</a></li>
-                            <li><a href="generic.html">A Generic Page</a></li>
-                        </ul>
-                    </div>
-				</article>
-
-			</main>
-
-		</div>
+      <footer>
+        <p>
+          Page Created by Bryce Tuppurainen and SENG1050 PASS team, publically
+          available under the MIT LICENSE
+        </p>
+      </footer>
+    </div>
 
     <script>
-        include(0); // Used to fill content in the tags with the include attribute (see ../assets/functions.js)
+      include(0); // Used to fill content in the tags with the include attribute (see ../assets/functions.js)
     </script>
-
-    </body>
-
+  </body>
 </html>
